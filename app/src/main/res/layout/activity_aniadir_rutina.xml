@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".AniadirRutina">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:outlineProvider="paddedBounds">
+
+        <TextView
+            android:id="@+id/tituloAniadirRutina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/titulo_aniadir_rutina"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="30sp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:backgroundTint="#595959" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tipoAniadirRutina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tipo_aniadir_rutina"
+                        android:textColor="#787878"
+                        android:textSize="24sp" />
+
+                    <RadioGroup
+                        android:id="@+id/grupoBotonTipo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/botonTipoCardio"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:checked="true"
+                            android:text="Cardio"
+                            android:textColor="@android:color/primary_text_light"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/botonTipoMusculo"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:text="Ganar músculo"
+                            android:textColor="@android:color/primary_text_light"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/botonTipoMixto"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:text="Mixta"
+                            android:textColor="@android:color/primary_text_light"
+                            android:textSize="24sp" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:backgroundTint="#595959" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/intensidadAniadirRutina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intensidad_aniadir_rutina"
+                        android:textColor="#787878"
+                        android:textSize="24sp" />
+
+                    <RadioGroup
+                        android:id="@+id/grupoBotonIntensidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/botonIntensidadSuave"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:checked="true"
+                            android:text="Suave"
+                            android:textColor="@android:color/primary_text_light"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/botonIntensidadNormal"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:text="Normal"
+                            android:textColor="@android:color/primary_text_light"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/botonIntensidadAlta"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:text="Alta"
+                            android:textColor="@android:color/primary_text_light"
+                            android:textSize="24sp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:backgroundTint="#595959" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/diasAniadirRutina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dias_aniadir_rutina"
+                        android:textColor="#787878"
+                        android:textSize="24sp" />
+
+                    <RadioGroup
+                        android:id="@+id/grupoBotonDias"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/botonDiasUno"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:checked="true"
+                            android:text="1 Día"
+                            android:textColor="@android:color/primary_text_light"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/botonDiasDos"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:text="2 Días"
+                            android:textColor="@android:color/primary_text_light"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/botonDiasTres"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:text="3 Días"
+                            android:textColor="@android:color/primary_text_light"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/botonDiasCuatro"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:text="4 Días"
+                            android:textColor="@android:color/primary_text_light"
+                            android:textSize="24sp" />
+
+                        <RadioButton
+                            android:id="@+id/botonDiasCinco"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:text="5 Días"
+                            android:textColor="@android:color/primary_text_light"
+                            android:textSize="24sp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:backgroundTint="#595959" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nombreAniadirRutina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nombre_aniadir_rutina"
+                        android:textColor="#787878"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/introNombreAniadirRutina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Introduce el nombre..."
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/teal_200">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/confirmarAniadirRutina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_200"
+                    android:text="Confirmar"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

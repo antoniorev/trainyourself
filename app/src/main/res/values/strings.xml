@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TrainYourself</string>
+    <string name="barra_titulo">TrainYourself</string>
+    <string name="mensaje_faltan_rutinas">No se ha añadido ninguna rutina aún</string>
+    <string name="titulo_aniadir_rutina">Añadir Rutina</string>
+    <string name="tipo_aniadir_rutina">¿Qué tipo de rutina?</string>
+    <string name="intensidad_aniadir_rutina">¿Qué intensidad?</string>
+    <string name="dias_aniadir_rutina">¿Cuántos días a la semana?</string>
+    <string name="nombre_aniadir_rutina">Nombre de la rutina:</string>
+    <string name="prueba">Prueba</string>
+
+</resources>

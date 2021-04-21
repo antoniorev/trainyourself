@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MostrarListaEjercicio">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF">
+
+        <TextView
+            android:id="@+id/tituloRutina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textColor="#673AB7"
+            android:textSize="30sp" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/listaMostrarListaEjercicios"
+        android:layout_width="match_parent"
+        android:layout_height="596dp"
+        android:layout_weight="70"
+        android:padding="20dp">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:backgroundTint="#00000000"
+            android:hapticFeedbackEnabled="false"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/botonAumentarIntensidad"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:backgroundTint="@color/mtrl_fab_bg_color_selector"
+                app:srcCompat="@android:drawable/arrow_up_float" />
+
+            <ImageButton
+                android:id="@+id/botonDisminuirIntensidad"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:backgroundTint="@color/mtrl_fab_bg_color_selector"
+                app:srcCompat="@android:drawable/arrow_down_float" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/botonEliminarRutina"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+    </LinearLayout>
+
+</LinearLayout>

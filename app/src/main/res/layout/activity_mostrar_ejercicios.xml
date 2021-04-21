@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MostrarEjercicios">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tituloLista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textColor="#D32F2F"
+            android:textSize="30sp" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/listaMostrarEjercicios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp" />
+</LinearLayout>
